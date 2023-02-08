@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        
+        .header{
+            grid-area: header ;
+        }
+        .nav{
+            grid-area: nav ;
+        }
+        .main{
+            grid-area: main ;
+        }
+        .aside{
+            grid-area: aside ;
+        }
+        .ad{
+            grid-area:ad ;
+        }
+        .footer{
+            grid-area: footer;
+        }
+        .header, .nav, .main, .aside, .ad, .footer{
+            background-color: aqua;
+        }
+        .containers{
+            display: grid;
+            gap: 20px;
+            grid-template-areas: 
+            "header header header header"
+            "nav    main   main   aside"
+            "nav    main   mani   adv"
+            "footer footer footer footer";
+        }
+    </style>
+</head>
+<body class="containers">
+    <header class="header">
+        <h1>Header</h1>
+    </header>
+    <nav class="nav">
+        <ul>
+            <li>item-1</li>
+            <li>item-2</li>
+            <li>item-3</li>
+        </ul>
+    </nav>
+    <main class="main">
+        <article>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis hic omnis nesciunt iste dolorem recusandae ipsa corrupti quos. Quis, ut maxime doloremque dignissimos odio nam quas expedita? Repellat natus voluptatum ad molestiae dolor vitae? Dignissimos quibusdam eius, hic explicabo, in culpa corporis asperiores molestias nobis aperiam aliquam beatae, eligendi labore?</p>
+        </article>
+    </main>
+    <aside class="aside">
+        <h1>Aside</h1>
+    </aside>
+    <div class="ad">
+        <h1>Advertise</h1>
+    </div>
+    <footer class="footer">
+        <h1>Footer</h1>
+    </footer>
+
+</body>
+</html>

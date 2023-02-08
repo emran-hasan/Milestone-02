@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            background-color: lightblue;
+            width: 600px;
+            height: 200px;
+        }
+        @keyframes ball-ball {
+            0%{
+                background-color: rgba(19, 17, 17, 0.863);
+                left: 0;
+                top: 0;
+            }
+            25%{
+                background-color: green;
+                top: 150px;
+                
+            }
+            50%{
+                background-color: yellow;
+                top: 0;
+                
+            }
+            75%{
+                background-color: blue;
+                top: 150px;
+                
+            }
+            100%{
+                background-color: lightblue;
+                left: 544px;
+                top: 0;
+            }
+            
+        }
+        .ball{
+            width: 50px;
+            height: 50px;
+            background-color: rgba(19, 17, 17, 0.863);
+            border-radius: 50%;
+            animation: ball-ball 5s ease-in-out 1s infinite alternate ;
+            position: relative;
+            
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="ball"></div>
+    </div>
+</body>
+</html>
